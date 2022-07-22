@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <p th:text="'Hello, ' + ${Test}"/>
+        <p th:text="'User Count: ' + ${UserCount}"/>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Middle NAME</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user: ${UserList}">
+                    <td th:text="${user.firstName}"></td>
+                    <td th:text="${user.lastName}"></td>
+                    <td th:text="${user.middleName}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

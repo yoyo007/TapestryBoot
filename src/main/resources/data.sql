@@ -1,0 +1,1 @@
+insert into APP_USER (first_name, last_name, middle_name) values ('Demo', 'Testing', 'Test');
